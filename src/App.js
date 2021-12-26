@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+// import './App.css';
+import Navbar from './components/Navbar';
+// import Card from './components/Card';
+import Button from './components/Button';
+// import { useState } from 'react';
+// import Form from './components/Form';
+// import ReactCircleModal from 'react-circle-modal'
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-around content-around items-center w-full mt-20 absolute p-3" >
+        
+        
+        <Button onclick={()=>{}}/>
+        
+      {/* <Form/> */}
+     
+  
+
+      </div>
+    </>
+      
+    
   );
 }
 
