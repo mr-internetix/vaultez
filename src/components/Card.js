@@ -1,11 +1,12 @@
 import React from "react";
-const Card = () => {
+const Card = ({props}) =>{
+
   return (
-    <div className="Card w-30 h-48 bg-white rounded">
+    <div key={props.id} className="Card w-30 h-48 bg-white rounded">
       <div className="card-inner p-4">
         <div className="information w-full flex flex-row text-center justify-start mb-5">
           <span className="social-name font-mono text-2xl mt-4 text-center justify-center">
-            FACEBOOK
+            {props.name}
           </span>
           <span className="card-img h-20 flex self-end rounded p-3 justify-end w-full">
             <svg
@@ -41,7 +42,7 @@ const Card = () => {
           </span>
         </div>
         <div className="social-id absolute text-gray-400 capitalize -mt-12">
-          <span>ajit@gmail.com</span>
+          <span>{props.email}</span>
         </div>
       </div>
       <div className="Button grid grid-cols-2 h -full w-full border-t-2 border-gray-300">
